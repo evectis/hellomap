@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+See this page for more XML attribute options
+https://developers.google.com/maps/documentation/android/map#using_xml_attributes
+-->
+
+<RelativeLayout 
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment 
+          android:id="@+id/map"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          class="com.google.android.gms.maps.SupportMapFragment"
+       />
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:gravity="bottom"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true">
+	<TextView
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dip" />
+	</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:gravity="top"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="false">
+	<Button
+        android:id="@+id/location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get location from GX"
+        android:onClick="locationButtonPress"
+         />
+	<Button
+        android:id="@+id/accessnetwork_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get accessnetwork type"
+        android:onClick="accessnetworkPress"
+         />
+	</LinearLayout>
+</RelativeLayout>
+
