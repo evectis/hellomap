@@ -38,7 +38,7 @@
              https://developers.google.com/maps/documentation/android/start#the_google_maps_api_key -->
         <meta-data
                 android:name="com.google.android.maps.v2.API_KEY"
-                android:value="AIzaSyBPAoZNvKQH-BT9ISkjrte44gibCTh50nQ"/>
+                android:value="YOUR GOOGLE MAPS KEY HERE"/>
 
         <activity
                 android:name="MainActivity"
